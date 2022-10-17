@@ -1,0 +1,63 @@
+table {
+    border-collapse: collapse;
+    font-family: sans-serif;
+    margin: auto;
+}
+
+table,
+th,
+td {
+    border: 1px solid #DCDCDC;
+}
+
+td,
+th {
+    padding: 30px;
+    text-align: center;
+}
+
+caption {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+caption>p:first-child {
+    margin-bottom: 4px;
+}
+
+caption>p:last-child {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+thead {
+    font-size: 18px;
+    line-height: 1.25;
+    color: white;
+    background-color: #149494;
+}
+
+.heading {
+    background-image: linear-gradient(black 15%, transparent);
+    background-color: #32B2B2;
+}
+
+.heading th {
+    padding-block: 20px;
+}
+
+.subheading {
+    background-image: linear-gradient(transparent, black 85%);
+    background-color: #149494;
+}
+
+tbody>tr:hover {
+    background-color: silver;
+}
+
+tfoot {
+    background-color: #149494;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.5;
+}

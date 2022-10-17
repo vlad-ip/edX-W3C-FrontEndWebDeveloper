@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Multimedia Page - made for edX W3C HTML5 and CSS Fundamentals">
+    <title>Multimedia Page</title>
+    <link rel="stylesheet"
+          href="css/styles.css">
+    <style>
+        /* No CSS here */
+    </style>
+</head>
+
+<body>
+    <h1 id="header">Multimedia Page</h1>
+
+    <hr>
+
+    <figure>
+        <figcaption>Simple Audio File with Controls, Autoplay and Muted</figcaption>
+        <audio src="https://ia904502.us.archive.org/0/items/Music_Calgary_PD_1/The.good.the.bad.and.the.ashy.mp3"
+               controls
+               autoplay
+               muted>Your Browser doesn't support the Audio Element</audio>
+    </figure>
+
+    <figure>
+        <figcaption>Audio with Multiple Source Files for better Browser Support</figcaption>
+        <audio controls
+               loop>
+            <source src="https://ia904502.us.archive.org/0/items/Music_Calgary_PD_1/The.good.the.bad.and.the.ashy.mp3"
+                    type="audio/mpeg">
+            <source src="https://ia904502.us.archive.org/0/items/Music_Calgary_PD_1/The.good.the.bad.and.the.ashy.wav"
+                    type="audio/wav">Your Browser doesn't support the Audio Element
+        </audio>
+    </figure>
+
+    <figure>
+        <figcaption>Simple Video File with Controls, Autoplay and Muted</figcaption>
+        <video src="https://www.w3schools.com/html/mov_bbb.mp4"
+               controls
+               width="600">
+            Your Browser doesn't support the Video Element
+        </video>
+    </figure>
+
+    <figure>
+        <figcaption>Video with Multiple Source Files for better Broswer Support</figcaption>
+        <video controls
+               width="600">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4"
+                    type="video/mp4">
+            <source src="https://www.w3schools.com/html/mov_bbb.webm"
+                    type="video/webm">
+            <source src="https://www.w3schools.com/html/mov_bbb.ogg"
+                    type="video/ogg">Your Browser doesn't support the Video Element
+        </video>
+    </figure>
+
+    <figure>
+        <figcaption>Video with Caption (Synchronized &amp; Styled)</figcaption>
+        <video controls
+               width="600">
+            <source src="https://user-images.githubusercontent.com/106475265/193854401-be1415d5-b4c1-400c-955a-7668675f3951.mp4"
+                    type="video/mp4">
+            <track src="https://gist.githubusercontent.com/vlad-ip/50a9e00aa2926499200e8e95c9fc34ed/raw/d915965fdd2b27c1cd8ea35124aaa25712bc866e/samurai-pizza-cats.vtt"
+                   kind="captions">Your Browser doesn't support the Video Element
+        </video>
+    </figure>
+
+    <p><strong>Important:</strong> the Caption for the Video above will not load because of <a
+           href="https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy">crossorigin</a> - Explanation
+        below:</p>
+
+    <figure class="fig-quote">
+        <blockquote>
+            <i><b>src</b></i><br>
+            &quot;Address of the track (.vtt file). Must be a valid URL. This attribute must be specified and its
+            URL
+            value must have the
+            same origin as the document — unless the &lt;audio&gt; or &lt;video&gt; parent element of the track element
+            has a
+            crossorigin
+            attribute.&quot;
+        </blockquote>
+        <figcaption><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/track#attr-src">
+                Attribute <i>&quot;src&quot;</i></a>
+            for &lt;track&gt; element - source <cite><abbr title="Mozilla Developer Network">MDN</abbr></cite>
+        </figcaption>
+    </figure>
+    <p>That being said, here you can get the <a
+           href="https://gist.githubusercontent.com/vlad-ip/50a9e00aa2926499200e8e95c9fc34ed/raw/d915965fdd2b27c1cd8ea35124aaa25712bc866e/samurai-pizza-cats.vtt">Caption
+            for the video</a> in <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API"><abbr
+                  title="Web Video Text Tracks Format">WebVTT</abbr></a> format.<br>
+        Please note that by clicking on the link above you will not automatically download the WebVTT caption, the
+        reason being that in the case of <a
+           href="https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy">crossorigin</a> the <a
+           href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-download"><i>download</i></a>
+        attribute of the &lt;a&gt;
+        element does not work, for Security reasons!
+    </p>
+    <hr>
+    <footer>
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                     src="http://jigsaw.w3.org/css-validator/images/vcss"
+                     alt="Valid CSS!">
+            </a>
+        </p>
+        <p>Made by <span class="italic bold">vlad-ip</span> for <span class="italic bold">edX</span>
+        </p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: hsl(90, 100%, 90%);
+}
+
+body {
+    width: 80vw;
+    max-width: 800px;
+    height: 80vw;
+    background-color: aliceblue;
+    margin-top: 50px;
+    margin-inline: auto;
+    border: 6vw inset brown;
+    border-image: repeating-linear-gradient(45deg, yellowgreen 5%, white 10%) 50;
+}
+
+.head {
+    height: 80%;
+    aspect-ratio: 1 / 1.5;
+    background-color: antiquewhite;
+    border-radius: 50% / 10% 10% 50% 50%;
+    margin-inline: auto;
+    margin-block: 10%;
+}
+
+.hair {
+    width: 100%;
+    height: 20%;
+    background-color: maroon;
+    border-radius: 50% / 50% 50% 20% 20%;
+}
+
+.eyes {
+    height: 20%;
+    margin-top: 30%;
+}
+
+.eye {
+    width: 30%;
+    height: 50%;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.eye.left {
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.eye.right {
+    margin-left: 60%;
+    margin-top: -15%;
+}
+
+.brow {
+    width: 100%;
+    height: 25%;
+    background-color: black;
+}
+
+.pupil {
+    aspect-ratio: 1 / 1;
+    height: 80%;
+    background-image: radial-gradient(black 0 10%, maroon 60% 100%);
+    border-radius: 50%;
+    margin-left: 30%;
+    margin-top: 1%;
+}
+
+.nose {
+    width: 14%;
+    margin-inline: auto;
+    border-bottom: 15vw solid bisque;
+    border-inline: 1.5vw solid transparent;
+    margin-top: -20%;
+}
+
+.mouth {
+    width: 30%;
+    height: 5%;
+    background-color: hsl(0, 80%, 50%);
+    margin-top: 10%;
+    margin-inline: auto;
+    border-radius: 50% / 0 0 100% 100%;
+}
+
+.chin {
+    width: 10%;
+    height: 2%;
+    margin-top: 7%;
+    margin-inline: auto;
+    border-top: 3px solid brown;
+    border-radius: 50% / 30% 30% 0 0;
+    opacity: 30%;
+
+}
+
+#question {
+    margin-top: 16vw;
+    padding: 10px;
+    background-image: linear-gradient(90deg, yellowgreen 0% 20%, white 60% 100%);
+    color: green;
+    font-family: cursive;
+}
+
+p {
+    width: fit-content;
+    margin-top: 4vw;
+    margin-inline: auto;
+}
+
+img {
+    width: 15vw !important;
+    height: auto !important;
+}

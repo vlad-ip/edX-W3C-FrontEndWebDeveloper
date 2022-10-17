@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: ghostwhite;
+    padding-block: 20px;
+}
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    text-align: start;
+    padding: 25px;
+    background-color: hsl(34, 78%, 91%);
+    /* border: 1px solid hsl(82, 39%, 22%); */
+}
+
+nav {
+    font-weight: bold;
+}
+
+nav>ul {
+    width: fit-content;
+    padding: 20px 40px;
+    background: hsl(82, 39%, 22%);
+    color: hsl(56, 38%, 65%);
+    list-style-type: "§ ";
+}
+
+nav li {
+    letter-spacing: 0.05em;
+}
+
+nav>ul a {
+    color: hsl(34, 78%, 91%);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    padding: 20px;
+    background-color: hsl(82, 39%, 22%);
+    color: hsl(34, 78%, 91%);
+}
+
+.h2-subtitle {
+    margin-block: -25px 0;
+    margin-left: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: left;
+
+}
+
+.ingredients,
+.directions {
+    padding-left: 20px;
+}
+
+hr {
+    margin: 0;
+    width: 100%;
+    height: 2px;
+}
+
+body>header>hr {
+    height: 4px;
+}
+
+.mx-40 {
+    margin-inline: 40px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+blockquote {
+    width: 100%;
+    padding: 0;
+    margin: -10px auto 5px;
+}
+
+blockquote>p {
+    margin-block: 25px;
+}
+
+blockquote>p:first-child,
+blockquote>p:last-child {
+    margin-block: 0;
+}
+
+figure {
+    width: 80%;
+    margin: 50px auto;
+    border: 1px solid silver;
+    padding: 32px 32px 4px;
+    background-color: hsl(0, 0%, 93%);
+}
+
+.figure-img {
+    width: 60%;
+    background-color: ghostwhite;
+}
+
+figure>img {
+
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-inline: auto;
+    margin: 0 auto 6px;
+    border: 1px solid hsl(82, 39%, 70%);
+}
+
+.figure-img>figcaption {
+    text-align: center;
+    margin-block: 5px;
+}
+
+figcaption {
+    font-size: medium;
+    color: hsl(0, 100%, 34%);
+    text-align: start;
+    margin-block: 5px;
+}
+
+.directions>ol>li {
+    margin-bottom: 25px;
+}
+
+.directions>ol ol {
+    list-style-type: lower-roman;
+}
+
+.directions>ol ol>li {
+    margin-block: 25px;
+}
+
+.li-none {
+    list-style-type: none;
+}
+
+.eye-candy {
+    color: hsl(0, 100%, 34%);
+    font-style: italic;
+    letter-spacing: 0.05em;
+}
+
+footer>p {
+    display: inline-block;
+    text-align: center;
+    margin-top: 50px;
+    /* border: 1px solid red; */
+    vertical-align: middle;
+}
+
+footer {
+    width: fit-content;
+    margin-inline: auto;
+}

@@ -1,0 +1,11 @@
+.fc {
+    display: flex;
+}
+
+p {
+    flex: 1 0 0;
+}
+
+.second {
+    flex: 2 0 0;
+}

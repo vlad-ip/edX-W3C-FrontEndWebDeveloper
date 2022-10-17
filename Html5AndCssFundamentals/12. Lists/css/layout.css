@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: antiquewhite;
+}
+
+body {
+    max-width: 500px;
+    margin: 50px auto;
+    border: 1px solid darkred;
+    background-color: whitesmoke;
+    border-radius: 50px;
+}
+
+ul {
+    /* border: 1px solid red; */
+
+    /* Keep 50px vertical space from Header */
+    margin-block: 50px;
+
+    /* Use letters instead of numbers */
+    list-style-type: square;
+    list-style-position: outside;
+    list-style-image: url("/images/my_triangle.png");
+}
+
+h1 {
+    /* border: 1px solid red; */
+    margin-top: 50px;
+
+    /* Center the Header */
+    /* Text-align: center; */
+    width: fit-content;
+    margin-inline: auto;
+
+    padding: 10px 100px;
+    background-color: bisque;
+    border-radius: 50px;
+}
+
+li {
+    /* Keep 20px from the left of page */
+    margin-left: 20px;
+
+    /* Keep 10px of between list items */
+    margin-bottom: 10px;
+
+    /* outline: 1px solid green; */
+}
+
+/* Keep space between Bullet and Li */
+/* li::before {
+    content: "\00a0";
+} */
+li::first-letter {
+    margin-left: 5px;
+}
+
+p a img {
+    display: block;
+    margin-inline: auto;
+    margin-block: 20px;
+}

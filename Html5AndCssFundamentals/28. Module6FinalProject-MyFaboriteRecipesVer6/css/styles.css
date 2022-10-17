@@ -1,0 +1,316 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    --line-width: 1px;
+    --knot-dimension: 8px;
+
+    background-color: ghostwhite;
+    padding: 0;
+
+    background-image:
+        linear-gradient(to bottom,
+            transparent calc(50% - 0.5 * var(--line-width)),
+            silver calc(50% - 0.5* var(--line-width)) calc(50% + 0.5* var(--line-width)),
+            transparent calc(50% + 0.5* var(--line-width))),
+        linear-gradient(to right,
+            transparent calc(50% - 0.5 * var(--line-width)),
+            silver calc(50% - 0.5* var(--line-width)) calc(50% + 0.5* var(--line-width)),
+            transparent 50%),
+        linear-gradient(to bottom right,
+            ghostwhite calc(50% - 0.5 * var(--knot-dimension)),
+            transparent calc(50% - 0.5 * var(--knot-dimension)) calc(50% + 0.5 * var(--knot-dimension)),
+            ghostwhite calc(50% + 0.5 * var(--knot-dimension))),
+        linear-gradient(to bottom left,
+            ghostwhite calc(50% - 0.5 * var(--knot-dimension)),
+            silver calc(50% - 0.5 * var(--knot-dimension)) calc(50% + 0.5 * var(--knot-dimension)),
+            ghostwhite calc(50% + 0.5 * var(--knot-dimension)));
+    background-position: center;
+    background-size: 150px 100px;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+body {
+    min-width: 450px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    text-align: start;
+    background-color: hsl(34, 78%, 91%, 85%);
+
+    border-inline: 10px double hsl(82, 39%, 22%);
+    border-image: repeating-linear-gradient(45deg, transparent, gray 25px) 30;
+}
+
+body>header:first-of-type,
+main,
+footer {
+    padding: 0 25px;
+}
+
+body>header:first-of-type {
+    position: sticky;
+    top: 0;
+    padding-top: 14px;
+    z-index: 1;
+    background-color: hsl(34, 78%, 91%);
+    border-top: 8px double hsl(82, 39%, 22%);
+    border-image: repeating-linear-gradient(45deg, transparent, gray 25px) 30;
+}
+
+h1 {
+    text-align: center;
+    margin-block: 0 15px;
+    padding: 20px;
+    background-color: hsl(82, 39%, 22%);
+    color: orange;
+
+    background-image:
+        conic-gradient(from 0deg at center,
+            black 90deg,
+            antiquewhite 90deg 180deg,
+            black 180deg 270deg,
+            antiquewhite 270deg 360deg);
+    background-size: 10% 50%;
+    background-blend-mode: multiply;
+    border-radius: 20px;
+}
+
+nav>h2 {
+    margin-block: 18px -14px;
+    text-align: center;
+    color: hsl(34, 78%, 91%);
+    background-color: hsl(82, 39%, 22%);
+    border: 1px solid silver;
+    border-radius: 25px;
+    background-image: linear-gradient(to right, hsl(34, 78%, 91%) 10%, hsl(82, 39%, 22%) 50%, hsl(34, 78%, 91%) 90%);
+}
+
+nav>ul {
+    width: fit-content;
+    padding: 20px 25px 20px 40px;
+    background-color: hsl(82, 39%, 22%);
+    border-radius: 20px;
+    color: hsl(56, 38%, 65%);
+    list-style-type: "§ ";
+
+    position: absolute;
+    left: calc(50% - (92px + 40px + 25px) / 2);
+    opacity: 0;
+    transition-property: opacity;
+    transition-delay: 0s, 0s;
+    transition-duration: 2.5s, 2.5s;
+}
+
+nav:is(:hover, :focus-within)>ul {
+    position: static;
+    margin-left: calc(50% - (92px + 40px + 25px) / 2);
+    opacity: 1;
+    transform: rotate(360deg);
+}
+
+nav li {
+    letter-spacing: 0.05em;
+}
+
+nav>ul a {
+    color: hsl(34, 78%, 91%);
+}
+
+.h2-subtitle {
+    margin-block: -25px 0;
+    margin-left: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: left;
+
+}
+
+.ingredients,
+.directions {
+    padding-inline: 40px;
+}
+
+hr {
+    margin: 2em auto;
+    width: 50%;
+    height: 2px;
+}
+
+:is(header, footer)>hr {
+    width: 100%;
+    height: 6px;
+    margin-block: 1.6em 0;
+}
+
+footer>hr {
+    margin-top: 0;
+}
+
+.mx-40 {
+    margin-inline: 40px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+blockquote {
+    width: 100%;
+    padding: 0;
+    margin: -10px auto 5px;
+}
+
+blockquote>p {
+    margin-block: 25px;
+}
+
+blockquote>p:first-child,
+blockquote>p:last-child {
+    margin-block: 0;
+}
+
+figure {
+    width: 80%;
+    margin: 50px auto;
+    border: 1px solid silver;
+    padding: 30px 30px 10px;
+    background-color: hsl(0, 0%, 93%);
+}
+
+.figure-img {
+    width: 60%;
+    padding: 20px 20px 5px;
+    background-color: ghostwhite;
+
+    background-image: repeating-conic-gradient(from 0deg at center,
+            antiquewhite 30deg,
+            hsl(30, 39%, 85%) 60deg);
+}
+
+figure>img {
+
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-inline: auto;
+    margin: 0 auto 6px;
+    border: 1px solid hsl(82, 39%, 70%);
+}
+
+.figure-img>figcaption {
+    text-align: center;
+    margin-block: 4px;
+}
+
+figcaption {
+    font-size: medium;
+    color: hsl(0, 100%, 34%);
+    text-align: start;
+    margin: 10px 5px 10px;
+}
+
+.directions>ol>li {
+    margin-bottom: 25px;
+}
+
+.directions>ol ol {
+    list-style-type: lower-roman;
+}
+
+.directions>ol ol>li {
+    margin-block: 25px;
+}
+
+.li-none {
+    list-style-type: none;
+}
+
+.eye-candy {
+    color: hsl(0, 100%, 34%);
+    font-style: italic;
+    letter-spacing: 0.05em;
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    padding-block: 0 15px;
+    background-color: hsl(34, 78%, 91%);
+    border-bottom: 8px double hsl(82, 39%, 22%);
+    border-image: repeating-linear-gradient(45deg, transparent, gray 25px) 30;
+}
+
+footer>:is(.info, .social) {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.info {
+    margin-block: 14px 7px;
+}
+
+.social {
+    padding: 10px;
+    color: hsl(34, 78%, 91%);
+    background-color: hsl(82, 39%, 22%);
+    border: 1px solid silver;
+    border-radius: 25px;
+    background-image: linear-gradient(to right, hsl(34, 78%, 91%) 10%, hsl(82, 39%, 22%) 50%, hsl(34, 78%, 91%) 90%);
+}
+
+.social a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.social a:hover {
+    transform: scale(1.15);
+}
+
+.social>a:nth-child(2) {
+    color: hsl(34, 78%, 91%);
+}
+
+footer p {
+    margin: 0;
+}
+
+table {
+    border: 2px double gray;
+    border-collapse: collapse;
+    background-color: blanchedalmond;
+    width: 100%;
+    margin-inline: auto;
+}
+
+tr,
+td {
+    border: 1px solid gray;
+}
+
+td {
+    padding: 5px 8px;
+}
+
+.col1 {
+    background-color: hsl(35, 60%, 88%);
+}
+
+.col2 {
+    background-color: hsl(35, 60%, 91%);
+}
+
+.col3 {
+    background-color: hsl(35, 60%, 94%);
+}

@@ -1,0 +1,27 @@
+/* Objective:
+    Here "main" does not yet have a height set, so it takes the height of its content. However, for this design, we want it to scroll its content, and we want it to extend to the bottom of the browser window.
+   Important:
+   Using "calc" or "flexbox" is not allowed! */
+
+body {
+    margin: 0px;
+}
+
+header {
+    height: 100px;
+    background-color: lightblue;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+main {
+    background-color: orange;
+    overflow-y: scroll;
+    position: fixed;
+    left: 0;
+    top: 100px;
+    right: 0;
+    bottom: 0;
+}

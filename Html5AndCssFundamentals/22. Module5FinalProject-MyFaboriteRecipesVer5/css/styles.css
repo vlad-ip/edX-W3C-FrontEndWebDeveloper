@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    --line-width: 1px;
+    --knot-dimension: 8px;
+
+    background-color: ghostwhite;
+    padding: 0;
+
+    background-image:
+        linear-gradient(to bottom,
+            transparent calc(50% - 0.5 * var(--line-width)),
+            silver calc(50% - 0.5* var(--line-width)) calc(50% + 0.5* var(--line-width)),
+            transparent calc(50% + 0.5* var(--line-width))),
+        linear-gradient(to right,
+            transparent calc(50% - 0.5 * var(--line-width)),
+            silver calc(50% - 0.5* var(--line-width)) calc(50% + 0.5* var(--line-width)),
+            transparent 50%),
+        linear-gradient(to bottom right,
+            ghostwhite calc(50% - 0.5 * var(--knot-dimension)),
+            transparent calc(50% - 0.5 * var(--knot-dimension)) calc(50% + 0.5 * var(--knot-dimension)),
+            ghostwhite calc(50% + 0.5 * var(--knot-dimension))),
+        linear-gradient(to bottom left,
+            ghostwhite calc(50% - 0.5 * var(--knot-dimension)),
+            silver calc(50% - 0.5 * var(--knot-dimension)) calc(50% + 0.5 * var(--knot-dimension)),
+            ghostwhite calc(50% + 0.5 * var(--knot-dimension)));
+    background-position: center;
+    background-size: 150px 100px;
+    background-repeat: repeat;
+}
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    text-align: start;
+    padding: 0 25px;
+    background-color: hsl(34, 78%, 91%, 85%);
+    border-block: 8px double hsl(82, 39%, 22%);
+    border-inline: 10px double hsl(82, 39%, 22%);
+    border-image: repeating-linear-gradient(45deg, transparent, gray 25px) 30;
+    /* border-image: repeating-linear-gradient(30deg, #4d9f0c, #9198e5, #4d9f0c 20px) 60; */
+}
+
+body>header:first-of-type {
+    position: sticky;
+    top: 0;
+    padding-top: 25px;
+    z-index: 1;
+    background-color: hsl(34, 78%, 91%);
+}
+
+nav {
+    font-weight: bold;
+
+}
+
+nav>h2 {
+    margin-block: 1.2em -0.5em;
+}
+
+nav>ul {
+    width: fit-content;
+    padding: 20px 25px 20px 40px;
+    background-color: hsl(82, 39%, 22%);
+    border-radius: 20px;
+    color: hsl(56, 38%, 65%);
+    list-style-type: "§ ";
+
+    position: absolute;
+    opacity: 0;
+    transition-property: opacity, rotate;
+    transition-delay: 0s, 0s;
+    transition-duration: 2.5s, 2.5s;
+}
+
+nav:is(:hover, :focus-within)>ul {
+    position: static;
+    opacity: 1;
+    transform: rotate(360deg);
+}
+
+nav li {
+    letter-spacing: 0.05em;
+}
+
+nav>ul a {
+    color: hsl(34, 78%, 91%);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    padding: 20px;
+    background-color: hsl(82, 39%, 22%);
+    color: orange;
+
+    background-image:
+        conic-gradient(from 0deg at center,
+            black 90deg,
+            antiquewhite 90deg 180deg,
+            black 180deg 270deg,
+            antiquewhite 270deg 360deg);
+    background-size: 10% 50%;
+    background-blend-mode: multiply;
+    border-radius: 20px;
+}
+
+.h2-subtitle {
+    margin-block: -25px 0;
+    margin-left: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: left;
+
+}
+
+.ingredients,
+.directions {
+    padding-inline: 40px;
+}
+
+hr {
+    margin: 2em auto;
+    width: 50%;
+    height: 2px;
+}
+
+body>:is(header, footer)>hr {
+    width: 100%;
+    height: 4px;
+    margin-block: 2.5em 0;
+}
+
+.mx-40 {
+    margin-inline: 40px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+blockquote {
+    width: 100%;
+    padding: 0;
+    margin: -10px auto 5px;
+}
+
+blockquote>p {
+    margin-block: 25px;
+}
+
+blockquote>p:first-child,
+blockquote>p:last-child {
+    margin-block: 0;
+}
+
+figure {
+    width: 80%;
+    margin: 50px auto;
+    border: 1px solid silver;
+    padding: 30px 30px 10px;
+    background-color: hsl(0, 0%, 93%);
+}
+
+.figure-img {
+    width: 60%;
+    padding: 20px 20px 5px;
+    background-color: ghostwhite;
+
+    background-image: repeating-conic-gradient(from 0deg at center,
+            antiquewhite 30deg,
+            hsl(30, 39%, 85%) 60deg);
+}
+
+figure>img {
+
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-inline: auto;
+    margin: 0 auto 6px;
+    border: 1px solid hsl(82, 39%, 70%);
+}
+
+.figure-img>figcaption {
+    text-align: center;
+    margin-block: 4px;
+}
+
+figcaption {
+    font-size: medium;
+    color: hsl(0, 100%, 34%);
+    text-align: start;
+    margin: 10px 5px 10px;
+}
+
+.directions>ol>li {
+    margin-bottom: 25px;
+}
+
+.directions>ol ol {
+    list-style-type: lower-roman;
+}
+
+.directions>ol ol>li {
+    margin-block: 25px;
+}
+
+.li-none {
+    list-style-type: none;
+}
+
+.eye-candy {
+    color: hsl(0, 100%, 34%);
+    font-style: italic;
+    letter-spacing: 0.05em;
+}
+
+footer p {
+    display: inline-block;
+    margin: 20px 0;
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    background-color: hsl(34, 78%, 91%);
+}
+
+footer>.info {
+    display: flex;
+    justify-content: space-around;
+    padding-block: 10px 0;
+}
+
+table {
+    border: 2px double gray;
+    border-collapse: collapse;
+    background-color: blanchedalmond;
+    width: 100%;
+    margin-inline: auto;
+}
+
+tr,
+td {
+    border: 1px solid gray;
+}
+
+td {
+    padding: 5px 8px;
+}
+
+.col1 {
+    background-color: hsl(35, 60%, 88%);
+}
+
+.col2 {
+    background-color: hsl(35, 60%, 91%);
+}
+
+.col3 {
+    background-color: hsl(35, 60%, 94%);
+}

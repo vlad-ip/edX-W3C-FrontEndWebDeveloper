@@ -1,0 +1,16 @@
+body {
+    font-size: 20px;
+}
+
+h1 {
+    /* Display in serif font */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    /* Text in darkred */
+    color: darkred;
+}
+
+li {
+    /* Book titles displayed in sans-serif */
+    font-family: cursive;
+}

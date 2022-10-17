@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Block vs Inline Homework - made for edX W3C HTML5 and CSS Fundamentals">
+    <title>Block vs Inline</title>
+    <link rel="stylesheet"
+          href="css/styles.css">
+    <style>
+        /* CSS not used here */
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Eliminating overlapping of inline elements</h1>
+        <hr>
+    </header>
+
+    <section class="original">
+        <h2>1. Original Source with the overlapping inline elements</h2>
+        <p class="brect w h pad marg-vert marg-horiz">He was a squyer of lowe degre</p>
+        <p class="prect w h pad marg-vert marg-horiz">Will Ladislaw's mind was now wholly bent on seeing Dorothea again,
+            and
+            forthwith quitting Middlemarch. </p>
+        <span class="brect w h pad marg-vert marg-horiz">Ladislaw felt the awkwardness of asking for more last words.
+        </span>
+        <span class="prect w h pad marg-vert marg-horiz u">It is certainly trying to a man's dignity to reappear when he
+            is
+            not expected to do so: a first farewell has pathos in it, but to come back for a second lends an opening to
+            comedy</span>
+    </section>
+
+    <hr class="short">
+
+    <section class="line-height">
+        <h2>2. Using &quot;line-height: 4;&quot; to solve the problem</h2>
+        <p class="brect w h pad marg-vert marg-horiz">He was a squyer of lowe degre</p>
+        <p class="prect w h pad marg-vert marg-horiz">Will Ladislaw's mind was now wholly bent on seeing Dorothea again,
+            and
+            forthwith quitting Middlemarch. </p>
+        <span class="brect w h pad marg-vert marg-horiz">Ladislaw felt the awkwardness of asking for more last words.
+        </span>
+        <span class="prect w h pad marg-vert marg-horiz u">It is certainly trying to a man's dignity to reappear when he
+            is
+            not expected to do so: a first farewell has pathos in it, but to come back for a second lends an opening to
+            comedy</span>
+    </section>
+
+    <hr class="short">
+
+    <section class="inline-block">
+        <h2>3. Using &quot;display: inline-block;&quot; to solve the problem</h2>
+        <p class="brect w h pad marg-vert marg-horiz">He was a squyer of lowe degre</p>
+        <p class="prect w h pad marg-vert marg-horiz">Will Ladislaw's mind was now wholly bent on seeing Dorothea again,
+            and
+            forthwith quitting Middlemarch. </p>
+        <span class="brect w h pad marg-vert marg-horiz">Ladislaw felt the awkwardness of asking for more last words.
+        </span>
+        <span class="prect w h pad marg-vert marg-horiz u">It is certainly trying to a man's dignity to reappear when he
+            is
+            not expected to do so: a first farewell has pathos in it, but to come back for a second lends an opening to
+            comedy</span>
+    </section>
+
+    <footer>
+
+        <hr>
+
+        <div class="info">
+            <p>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                         src="http://jigsaw.w3.org/css-validator/images/vcss"
+                         alt="Valid CSS!">
+                </a>
+            </p>
+            <p>Made by <span>vlad-ip</span> for <span>edX</span>
+            </p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

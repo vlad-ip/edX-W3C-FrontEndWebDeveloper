@@ -1,0 +1,94 @@
+html {
+    background-color: honeydew;
+    ;
+}
+
+body {
+    max-width: 900px;
+    margin-inline: auto;
+    background-color: aliceblue;
+    border: 1px solid maroon;
+    padding-inline: 60px;
+    color: #fcbe24;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    ;
+}
+
+h1 {
+    width: fit-content;
+    margin-inline: auto;
+    color: orangered;
+}
+
+figure {
+    background-color: hsl(200, 40%, 10%);
+    border-radius: 20px;
+    box-shadow: 0 0 1px 2px silver, 0 0 2px 4px gray, 0 0 0 6px black;
+    padding: 40px;
+    margin: 60px 0;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.fig-quote {
+    background-color: floralwhite;
+    border: 1px solid maroon;
+    box-shadow: none;
+}
+
+.fig-quote blockquote {
+    background-color: antiquewhite;
+    border-radius: 20px;
+    color: maroon;
+    padding: 40px;
+}
+
+.fig-quote figcaption {
+    color: maroon;
+    margin-inline: 40px;
+    text-align: right;
+}
+
+
+audio,
+video {
+    display: block;
+    margin: 40px auto 0;
+    text-align: center;
+}
+
+video {
+    width: 100%;
+    min-width: 180px;
+    height: auto;
+}
+
+audio {
+    width: 100%;
+    max-height: 100%;
+}
+
+body p {
+    color: maroon;
+}
+
+body>hr:last-of-type {
+    margin-top: 60px;
+}
+
+footer>p {
+    display: inline-block;
+    margin-inline: 40px;
+}
+
+footer>p:first-child {
+    vertical-align: middle;
+}
+
+footer {
+    width: fit-content;
+    margin-inline: auto;
+}

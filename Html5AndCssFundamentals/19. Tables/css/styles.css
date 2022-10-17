@@ -1,0 +1,117 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/* Generic Table Styles */
+table {
+    width: 800px;
+    margin-inline: auto;
+}
+
+table>caption {
+    margin-block: 80px 20px;
+}
+
+table>caption p:first-child {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+table>caption p:nth-child(2) {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+/* Table2 Styles */
+.table2 {
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 19.6px;
+    color: rgb(69, 69, 69);
+}
+
+.table2,
+.table2 th,
+.table2 td {
+    border: 1px solid hsl(206, 6%, 78%);
+    padding: 10px;
+}
+
+/* Table3 Styles */
+.table3 {
+    font-size: 18px;
+    line-height: 20px;
+    border-collapse: collapse;
+}
+
+.table3,
+.table3 th,
+.table3 td {
+    border: 2px solid black;
+    padding: 15px;
+}
+
+.table3>thead th {
+    background-color: hsl(0, 0%, 45%);
+    color: lightyellow;
+}
+
+.table3>tbody td {
+    text-align: center;
+    background-color: lightgray;
+    color: crimson;
+}
+
+/* Table4 Styles */
+.table4 {
+    font-size: 18px;
+    line-height: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table4,
+.table4 th,
+.table4 td {
+    border: 2px solid white;
+    padding: 15px;
+}
+
+.table4 tbody {
+    text-align: center;
+}
+
+.table4>thead>tr {
+    background-color: hsl(210, 65%, 60%);
+    border-bottom: 4px solid white;
+    text-align: center;
+}
+
+.table4>tbody>tr:nth-child(odd) {
+    background-color: hsl(220, 50%, 87%);
+}
+
+.table4>tbody>tr:nth-child(even) {
+    background-color: hsl(220, 50%, 92%);
+}
+
+.table4>tbody>tr:hover {
+    background-color: yellow;
+    color: red;
+}
+
+body>p:last-child,
+body>p:nth-last-child(2) {
+    font-size: Large;
+    margin: 50px;
+}

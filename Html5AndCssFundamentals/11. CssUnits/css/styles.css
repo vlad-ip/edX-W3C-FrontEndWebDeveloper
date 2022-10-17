@@ -1,0 +1,15 @@
+html {
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-left: 4px;
+}
+
+ol>li {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    margin-left: 4px;
+}

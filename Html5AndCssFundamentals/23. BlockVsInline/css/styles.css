@@ -1,0 +1,111 @@
+ html,
+ body {
+     margin: 0;
+     padding: 0;
+ }
+
+ section {
+     margin-block: 50px;
+ }
+
+ .u {
+     text-decoration: underline;
+ }
+
+ .brect {
+     background-color: lightblue;
+     border: 1px dotted dimgray;
+ }
+
+ .prect {
+     background-color: lightpink;
+     border: 1px dotted dimgray;
+ }
+
+ .w {
+     width: 300px;
+ }
+
+ .h {
+     height: 100px;
+ }
+
+ .pad {
+     padding: 20px;
+ }
+
+ .marg-vert {
+     margin-top: 30px;
+     margin-bottom: 30px;
+ }
+
+ .marg-horiz {
+     margin-left: 30px;
+     margin-right: 30px;
+ }
+
+ .line-height span {
+     /* "line-height: 4;" works best for eliminating the overlapping in this case */
+     line-height: 4;
+ }
+
+ .inline-block span {
+     /* "display: inline-block;" also works, but may not be what we are looking for in this case. We can observe the alignment of the 2 inline blocks based on their baseline! */
+     display: inline-block;
+ }
+
+ header {
+     position: sticky;
+     top: 0;
+     background-color: hsl(34, 78%, 91%)
+ }
+
+ h1 {
+     color: orangered;
+     margin: 0;
+     padding: 30px;
+     width: fit-content;
+ }
+
+ footer {
+     position: sticky;
+     bottom: 0;
+     background-color: hsl(34, 78%, 91%);
+     font-size: large;
+ }
+
+ footer>.info {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     padding-block: 30px;
+ }
+
+ footer p {
+     display: inline-block;
+     margin: 0;
+ }
+
+ footer span {
+     font-weight: bold;
+     font-style: italic;
+ }
+
+ footer img {
+     vertical-align: middle;
+ }
+
+ .madeby {
+     margin: 0;
+     background-color: blueviolet;
+ }
+
+ .short {
+     width: 40%;
+     height: 2px;
+     background-color: hsl(34, 78%, 91%);
+ }
+
+ footer hr {
+     margin-bottom: 0;
+ }

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Page with Decorative, Informative and Text Images made for edX W3C FrontEnd Web Development Course">
+    <title>Decorative, Informative & Text Images</title>
+</head>
+
+<main style="max-width: 640px; text-align: justify;">
+
+    <header>
+        <h1>
+            <img src="images/cat-banner.png"
+                 alt=""
+                 title="Decorative Image of Cat"
+                 width="300"
+                 style="vertical-align: middle; margin-bottom: 15px;"><span style="white-space: nowrap">The Siberian
+                Forest Cat</span>
+        </h1>
+
+        <hr style="width: 98%; height: 4px; color: gray;">
+    </header>
+
+    <br>
+    <h2>Learn From the Cat the <i>Image Roles in a Web Page</i></h2>
+    <p>The Cat says that an image can fall in one of the three categories below:</p>
+    <ol type="I">
+        <li><strong>Decorative Images</strong></li>
+        <li><strong>Informative Images</strong></li>
+        <li><strong>Images Containing Text</strong></li>
+    </ol>
+
+    <p>Now let's describe below what the Cat taught me about any of these image types:</p>
+
+    <br>
+
+    <section id="decorative-image">
+        <h3>Decorative Image</h3>
+        <p>
+            is an image that has purely esthetic role.<br>
+            Thus, such an image does not transmit any information.<br><br>
+            For example, consider the image in the top left of the page, containing the silhouette of a walking cat: it
+            doesn't transmit any information to the user, but it improves the look of the page. Thus, even if this
+            picture
+            also needs to have an "alt" attribute, its value has to be void.<br>
+            It's worth mention that this image is placed inside the &lt;h1&gt; element and this is perfectly legit. In
+            this situation the fact that its "alt" attribute is void, helps in the case of people who use screen
+            readers or command line browsers,
+            because otherwise the description of the picture would interfere with the &lt;h1&gt; element content in
+            their
+            case.
+        </p>
+    </section>
+
+    <br>
+
+    <section id="informative-image">
+        <h3>Informative Image</h3>
+        <p>is an image whose main role is to transmit information to the user.</p>
+        <p>Have you seen any Siberian Forest Cat up to now? If not, below there are some pictures.<br>
+            These pictures are considered <i>Informative Images</i> because they teach you how a Tabby Siberian Cat
+            looks like as a kitten and as an adult.
+        </p>
+        <figure>
+            <a title="Siberian Forest Cat - Tabby Kitten, via Wikimedia Commons"
+               href="https://commons.wikimedia.org/wiki/File:Kot_Syberyjski.jpg"><img
+                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Kot_Syberyjski.jpg/1024px-Kot_Syberyjski.jpg"
+                     alt="Siberian Forest Cat - Tabby Kitten"
+                     width="640"
+                     style="max-width: 100%;"></a>
+            <figcaption>Siberian Forest Cat - Tabby Kitten</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/PitziTheCat-SiberianForestCat-12.07.2018.jpg"
+                 title="Siberian Forest Cat - Tabby Adult Female named Pitzi"
+                 alt="Siberian Forest Cat - Tabby Adult Female"
+                 width="640"
+                 style="max-width: 100%;">
+            <figcaption>Siberian Forest Cat - Tabby Adult Female named Pitzi</figcaption>
+        </figure>
+
+        <figure>
+            <a title="Siberian Forest Cat - Tabby Adults: Male and Female, via Wikimedia Commons"
+               href="https://commons.wikimedia.org/wiki/File:Siberian_Cats_Brother_Sister_2.jpg"><img
+                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Siberian_Cats_Brother_Sister_2.jpg/1024px-Siberian_Cats_Brother_Sister_2.jpg"
+                     alt="Siberian Forest Cat - Tabby Adults: Male and Female"
+                     width="640"
+                     style="max-width: 100%;"></a>
+            <figcaption>Siberian Forest Cat - Tabby Adults: Male and Female</figcaption>
+        </figure>
+
+    </section>
+
+    <br>
+
+    <section id="image-with-text">
+        <h3>Image Containing Text</h3>
+        <p>is an image whose main role is to show a text in such a way in that
+            it cannot be presented by using a font family and CSS. Below you can see an example of such an image.</p>
+        <figure>
+            <a title="cat PNG Designed By haris99 from Pngtree.com"
+               href="
+               https://pngtree.com/freepng/cat-quote-lettering-typography-life-is-better-with-a-cat_5317047.html"><img
+                     src="images/LifeIsBetterWithACat.png"
+                     alt="Black&White image of a Cat with text saying 'Life is Better with a Cat'"
+                     width="640"
+                     style="max-width: 100%; border: 5px solid silver;"></a>
+            <figcaption>Live Life to the Best! ;)</figcaption>
+        </figure>
+    </section>
+
+    <br>
+
+    <section id="conclusion">
+        <h3>Conclusion:</h3>
+        <p>From what we've learned above from the <b>Cat</b>, we can say that the <strong>Decorative Images</strong>
+            only
+            role is about
+            <strong>Presentation</strong>, the main role of the <strong>Informative Images</strong> is about
+            <strong>Content</strong> and an <strong>Image Containing Text</strong> is usually dealing with both roles.
+        </p>
+    </section>
+
+</main>
+
+</html>
