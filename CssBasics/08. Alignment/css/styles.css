@@ -1,0 +1,105 @@
+/* *,
+*::before,
+*::after {
+    outline: 1px solid black;
+} */
+
+body {
+    font-family: Tahoma;
+
+    /* removed the margins */
+    margin: 0;
+
+    /* because of h1-height=75px, if the text jumps on 3 rows it will overflow unless we put min-width=450px.
+    We choose min-width=500px, in order to correspond to the section-min-width=500px and to look good on smaller screens */
+    min-width: 500px;
+}
+
+header {
+    background-color: #EC576B;
+    color: white;
+    border-bottom: 5px #FEDC3D solid;
+
+    /* center text horizontally */
+    text-align: center;
+}
+
+header h1 {
+    border-bottom: 2px #FFFFFF solid;
+
+    /* make width 50% & height 75px */
+    width: 50%;
+    height: 75px;
+
+    /*  center horizontally */
+    margin-inline: auto;
+
+    /* center text horizontally and vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header p {
+    border-bottom: 2px #FFFFFF solid;
+
+    /* make height 50px */
+    height: 50px;
+}
+
+section {
+    background-color: #FEDC3D;
+
+    /* make width 75% & min-width 500px */
+    width: 75%;
+    min-width: 500px;
+
+    /* center horizontally */
+    margin-inline: auto;
+}
+
+h2 {
+    border-bottom: 5px #000000 solid;
+
+    /* make width 30%, padding 30px, center horizontally */
+    width: 30%;
+    padding: 30px;
+    margin-inline: auto;
+    text-align: center;
+}
+
+article {
+    background-color: #FFFFFF;
+
+    /* make width 40%, margin 50px, padding 10px 15px 30px, justify text */
+    width: 40%;
+    margin: 50px;
+    padding: 10px 15px 30px;
+    text-align: justify;
+}
+
+#leftP {
+    /* make margin left 10% */
+    margin-left: 10%;
+}
+
+#rightP {
+    /* make margin left 50% */
+    margin-left: 50%;
+}
+
+h3 {
+    text-align: right;
+}
+
+footer {
+    background-color: #4EC5C1;
+    border-top: 5px #FEDC3D solid;
+    color: white;
+
+    /* make padding 10px, margin 30px, center text horizontally */
+    padding: 10px;
+    margin: 30px;
+    text-align: center;
+
+}

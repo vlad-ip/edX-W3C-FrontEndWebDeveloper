@@ -1,0 +1,114 @@
+html {
+    background-color: antiquewhite;
+    min-width: 420px;
+}
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: cornsilk;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    margin-block: 0;
+    background-color: hsl(71, 100%, 20%);
+    border-radius: 10px 10px 0 0;
+    color: cornsilk;
+    padding: 0.5em;
+
+}
+
+h1,
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header img {
+    float: right;
+    width: 50%;
+    max-width: 300px;
+    margin: 25px 5px;
+    border-radius: 10px;
+}
+
+.card {
+    display: flow-root;
+    border: 1px solid hsl(71, 100%, 50%);
+    margin-top: 0;
+}
+
+.card h2 {
+    color: crimson;
+    margin-block: 25px 10px;
+}
+
+.card p {
+    margin-block: 0 25px;
+}
+
+.card p>span {
+    white-space: nowrap;
+}
+
+article h2 {
+    margin-top: 0;
+    margin-inline: -16px;
+    padding: 8px 16px;
+    background-color: hsl(75, 60%, 70%);
+    border-radius: 10px 10px 0 0;
+    color: hsl(71, 100%, 20%);
+}
+
+h1,
+.card,
+article {
+    padding-inline: 16px;
+}
+
+.card,
+article {
+    margin-bottom: 16px;
+    color: hsl(71, 100%, 20%);
+    border: 1px solid hsl(71, 100%, 20%);
+    border-radius: 10px;
+}
+
+.card {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+article>p {
+    line-height: 1.8;
+}
+
+li {
+    padding-block: .5em;
+}
+
+article:first-of-type {
+    clear: right;
+}
+
+article:last-of-type {
+    margin-bottom: 0;
+}
+
+:lang(ro) {
+    background-color: hsl(350, 100%, 88%, 35%);
+    font-style: italic;
+}
+
+a {
+    text-decoration-color: hsl(195, 100%, 50%, 25%);
+    text-decoration-thickness: 3px;
+}
+
+.bold {
+    font-weight: bold;
+    background-color: hsl(350, 100%, 88%, 35%);
+    color: hsl(195, 70%, 50%, 95%);
+    padding-inline: 3px;
+}

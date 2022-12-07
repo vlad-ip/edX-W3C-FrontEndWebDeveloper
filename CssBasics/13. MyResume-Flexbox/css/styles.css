@@ -1,0 +1,183 @@
+/* generic rules
+================= */
+* {
+    box-sizing: border-box;
+    /* outline: 1px dashed black; */
+}
+
+html {
+    width: 100%;
+    min-width: 640px;
+    min-height: 100vh;
+    background-color: antiquewhite;
+    font-family: 'Roboto', sans-serif;
+    padding-block: 20px;
+}
+
+body {
+    width: 75%;
+    margin: 0 auto;
+    height: inherit;
+    background-color: white;
+    padding: 20px;
+}
+
+:lang(la) {
+    font-style: italic;
+    text-align: justify;
+    hyphens: auto;
+}
+
+/* <header> rules
+================== */
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    height: 5em;
+    margin-bottom: 20px;
+    border-bottom: 3px solid black;
+}
+
+header>h1 {
+    margin-block: 0;
+    position: relative;
+    top: 0.4em;
+    font-size: 2.4em;
+}
+
+header span {
+    color: lightseagreen;
+}
+
+header>address {
+    align-self: flex-end;
+    margin: 0;
+    line-height: 1;
+    font-style: normal;
+}
+
+header p {
+    margin: 0;
+}
+
+/* <main> rules
+================ */
+.career,
+.job {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.career {
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.work-experience {
+    width: calc(70% - 5px);
+    background-color: hsl(0, 0%, 92%);
+}
+
+h2 {
+    font-size: 1.4em;
+    margin: 0;
+    padding: 10px 10px 0;
+    border-bottom: 2px solid black;
+}
+
+.other-career-info {
+    width: calc(30% - 5px);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+
+.other-career-info>section {
+    background-color: hsl(0, 0%, 92%);
+    margin: 0 0 20px;
+    padding-bottom: 5px;
+}
+
+.other-career-info>section:last-of-type {
+    margin-bottom: 0;
+}
+
+.job :is(.year, .workplace),
+.other-career-info>section :is(h3, p) {
+    padding-inline: 10px;
+}
+
+.job .year {
+    padding-inline: 14px;
+}
+
+.job .workplace {
+    border-left: 2px solid black;
+    padding-block: 15px;
+}
+
+h3 {
+    color: lightseagreen;
+    font-size: 1.1em;
+    font-weight: normal;
+    margin: 0;
+}
+
+.workplace>p,
+.other-career-info p {
+    margin-block: 0;
+}
+
+.other-career-info h3,
+.objective>p {
+    margin-top: 20px;
+}
+
+.workplace>p>span:first-of-type,
+.connect>span {
+    font-size: 1.05em;
+    font-weight: bold;
+}
+
+.position {
+    margin-bottom: 22px;
+}
+
+.leadership>.position:last-of-type {
+    margin-bottom: 9px;
+}
+
+.charity-work,
+footer {
+    background-color: hsl(0, 0%, 92%);
+    margin-top: 20px;
+}
+
+/* <footer> rules
+================== */
+footer {
+    text-align: center;
+    height: 4em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.connect span {
+    font-weight: normal;
+    color: lightseagreen;
+    padding-right: 2px;
+}
+
+.connect a {
+    padding: 3px;
+}
+
+.connect a:hover {
+    color: red;
+    font-weight: bold;
+    font-size: larger;
+}
